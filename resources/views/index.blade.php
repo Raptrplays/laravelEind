@@ -7,8 +7,8 @@
     @vite('resources/css/app.css')
     <title>Coureurs</title>
 </head>
-<body>
-    <table class="min-w-full divide-y">
+<body class="bg-neutral-950">
+    <table class="min-w-full">
         <thead>
             <tr>
                 <th class="px-6 py-3 text-left text-gray-500">
@@ -23,9 +23,12 @@
                 <th class="px-6 py-3 text-left text-gray-500">
                     CONTRACT
                 </th>
+                <th class="px-6 py-3 text-left text-gray-500">
+                    ACTIONS
+                </th>
             </tr>
         </thead>
-        <tbody class="bg-white divide-gray-200">
+        <tbody class="bg-neutral-900 border-y-2 text-white">
             @foreach ($coureurs as $coureur)
                 <tr>
                     <td class="px-6 py-4">
